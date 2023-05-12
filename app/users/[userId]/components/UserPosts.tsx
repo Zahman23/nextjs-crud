@@ -7,7 +7,7 @@ export default async function UserPosts( { promise } : Props) {
 
     const content = posts.map(post => {
         return(
-            <div className="card w-96 bg-primary text-primary-content">
+            <div className="card w-96 bg-primary text-primary-content" key={post.id}>
               <div className="card-body">
                  <h2 className="card-title">{post.title}</h2>
                  <p>{post.body}</p>
